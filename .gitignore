@@ -10,3 +10,5 @@ my_images
 .ipynb_checkpoints/
 .idea
 data/
+*.h5
+__pycache__

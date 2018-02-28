@@ -29,6 +29,8 @@ def load_data(test=False):
 
     if not test:  # only FTRAIN has target columns
         y = df[df.columns[:-1]].values
+        # y consists of values for things like left_eye_center_x and left_eye_center_y - this is a position in the
+        # 96 x 96 image
         y = (y - 48) / 48  # scale target coordinates to [-1, 1]
         X, y = shuffle(X, y, random_state=42)  # shuffle train data
         y = y.astype(np.float32)
