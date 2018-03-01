@@ -12,3 +12,4 @@ my_images
 data/
 *.h5
 __pycache__
+my_pic*

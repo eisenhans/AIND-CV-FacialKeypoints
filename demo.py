@@ -4,6 +4,5 @@ a = np.array([[1, 2, 3], [4, 5, 6]])
 print(a.shape)
 print(a)
 
-a = np.expand_dims(a, axis=a.size)
-print(a.shape)
-print(a)
+b = a / 2
+print(b)
